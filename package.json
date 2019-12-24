@@ -8,5 +8,8 @@
     "start": "node main.js"
   },
   "author": "lukas kreuzer",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
 }
