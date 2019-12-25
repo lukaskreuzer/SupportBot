@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const config = require('./config.json');
 let loggedInSupporters = [];
 
-bot.login('NTM0MTE2NzEwOTYyNDI5OTgy.XgJmog.ZMmNB5LVkcQ-YqEtBpZGLAwwGtA'); // for heroku variable
+bot.login(process.env.token); // for heroku variable
 
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
   let newUserChannel = newMember.voiceChannel;
